@@ -1,0 +1,164 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Add box-sizing property */
+}
+
+body {
+  font-family: system-ui;
+}
+
+.navbar {
+  padding:  0rem 1rem; 
+  font-size: 16px;
+  margin:  0rem 1rem;
+}
+
+.navbar button {
+  background-color: rgb(29, 29, 29);
+  color: rgb(237, 237, 111);
+  border-radius: 10px;
+  margin-right: 10px; /* Corrected */
+}
+
+.navbar-menu {
+  margin: 0 2rem; 
+  font-size: 1.2rem;
+}
+
+.navbar button:hover {
+  background-color: rgba(2, 2, 2, 0.57);
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #494949;
+}
+
+.navbar .active {
+  padding-bottom: 2px;
+  color: #494949;
+    font-weight: 1000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: 0.1s ease-in-out;
+}
+
+
+.navbar li {
+  cursor: pointer;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  min-width: 40px;
+  min-height: 10px;
+  background-color: blue;
+  top: -8px;
+  right: -8px;
+}
+
+.search-container {
+  display: flex;
+  width: 600px;
+  margin: 0 auto; 
+  padding: 10px; 
+}
+
+.search-input {
+  width: 75%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 10px 0 0 10px;
+}
+
+.search {
+  border: none;
+  background-color: black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.cartCont {
+  margin: 0 3rem;
+}
+
+.sign {
+  color: black;
+  margin: 0 10px;
+  width: 100px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+.cart {
+  width: 40px;
+  height: 40px;
+  margin: 0rem 1rem;
+  cursor:pointer;
+  
+}
+
+
+.nav-count{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -55px;
+  margin-bottom: 29px;
+  border-radius: 11px;
+  margin-left: 45px;
+  background-color: red;
+  color: white;
+
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    margin: 0;
+    background-color: rgb(255, 255, 78);
+    align-items: center;
+    padding: 0.5rem; 
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  li {
+    margin-right: 0; }
+
+  .search-container {
+    width: 80vw;
+    margin-top: 0rem;
+    margin: 0 1rem; 
+    border-radius: 40px;
+    padding: 5px; 
+  }
+
+  .search-input {
+    width: 90%;
+    border-radius: 10px 0px 0 10px; 
+  }
+
+  .cartCont {
+    display: none;
+  }
+}

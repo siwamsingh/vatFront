@@ -1,0 +1,66 @@
+.grid {
+    width: 90%;
+    height: 400px;
+   margin:  2rem 4.7rem;
+    cursor: pointer;
+    background-color: rgb(247, 247, 128);
+}
+
+
+.grid:hover {
+    border: 20px solid rgb(255, 243, 24);
+    transition:  0.3s ease-in ;
+}
+
+.grid2{
+    width: 40%;
+    margin:  0rem 5rem 2rem ;
+     cursor: pointer;
+     transition: 0.5s ease-out;
+}
+.grid2:hover{
+   opacity: 0.6;
+   
+}
+
+.grid3{
+   width: 23%;
+   margin: -0rem -3rem 24rem ;
+}
+
+.grid4 {
+    width: 23%;
+    margin: -1rem 4.5rem 23rem ;
+}
+.grid5{
+    position: absolute;
+    width: 47.3%;
+    height: 332px;
+    margin:  17rem -49.5rem;
+  
+}
+@media screen and (max-width: 768px) {
+    .grid,
+    .grid2,
+    .grid3,
+    .grid4 {
+        width: 80%; 
+        margin: 1rem 2rem; 
+    }
+    .grid5{
+        display: none;
+    }
+    .grid{
+        height: 6rem;
+        margin: 0rem 2rem;
+    }
+    .grid1{
+        height: 10rem;
+    }
+    
+.grid:hover {
+    border: 5px solid rgb(255, 250, 151);
+    transition:  0.3s ease-in ;
+}
+
+}
